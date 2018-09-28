@@ -50,7 +50,7 @@ jobs:
           name: test
           command: |
             npm test
-            ./cc-test-reporter format-coverage -t lcov
+            ./cc-test-reporter format-coverage -t lcov < coverage/lcov.info
             ./cc-test-reporter upload-coverage
 
       - run: # run coverage report
